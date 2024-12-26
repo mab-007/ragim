@@ -1,0 +1,159 @@
+.zoom {
+  width: 80%;
+  height: auto;
+  overflow: visible;
+  margin-top: 4%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid; */
+}
+
+/* Mobile screens (320px - 768px) */
+@media only screen and (max-width: 768px) {
+  .zoom {
+    width: 90%;
+    margin-top: 4%;
+    padding: 5%;
+    margin-left: 5%;
+  }
+}
+
+/* Tablet screens (769px - 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .zoom {
+    width: 85%;
+    margin-top: 6%;
+    padding: 4%;
+  }
+}
+
+/* Desktop screens (1025px and above) */
+@media only screen and (min-width: 1025px) {
+  .zoom {
+    width: 80%;
+    margin-top: 4%;
+    padding: 3%;
+  }
+}
+
+
+.zoom img {
+  height: 150px;
+  width: 90%;
+  object-fit: cover;
+  transition: 0.5s all ease-in-out;
+}
+.zoom:hover img {
+  transform: scale(1.1);
+}
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.productInfo {
+  width: 60%;
+  padding-left: 20px;
+}
+.productImage {
+  width: 40%;
+}
+
+.headings {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 4% 0 0 0;
+}
+.dividers {
+  height: 1rem;
+  margin-top: 4%;
+  background-color: #ececec;
+  font-size: xl;
+  font-weight: 800;
+}
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #757575;
+}
+
+.homeTopBox {
+  height: 30rem;
+  width: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("https://res.cloudinary.com/dn0hjcpmq/image/upload/v1726303358/l2lupptu9trhrcpnawgm.jpg");
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Mobile devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .homeTopBox {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+      url("https://res.cloudinary.com/dn0hjcpmq/image/upload/v1726303358/l2lupptu9trhrcpnawgm.jpg");
+  }
+}
+
+/* Tablets (min-width: 769px) and (max-width: 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .homeTopBox {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+      url("https://res.cloudinary.com/dn0hjcpmq/image/upload/v1726303358/l2lupptu9trhrcpnawgm.jpg");
+  }
+}
+
+
+.popOverButton {
+  border-radius: 5px 0 0 5px;
+  height: 100%;
+  background-color: whitesmoke;
+  font-size: 20px;
+  padding-bottom: 5%;
+}
+
+.popOverInput {
+  font-size: 15px;
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+  height: 100%;
+  background-color: whitesmoke;
+  outline: none;
+}
+
+.homeSearchBar {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+.searchResultBox {
+  border: 1px solid whitesmoke;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  height: 200px;
+  overflow: auto;
+  margin-left: 30%;
+  margin-top: 1%;
+  border-radius:5px;
+  border-top: none;
+  background-color: whitesmoke;
+  text-align: left;
+  padding:3% ;
+  /* display: none; */
+}
+.suggestions{
+  padding: 2%;
+  border-radius: 5px;
+  margin-bottom: 2%;
+  cursor: pointer;
+}

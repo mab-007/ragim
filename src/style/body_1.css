@@ -1,0 +1,116 @@
+.hero {
+    /* width: 100%;
+    height: 500px;
+    background-color: pink;
+    background-image: url(../assets/woman_uc.png);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* transform: scaleX(-1); */
+  }
+
+  .hero img {
+    width: 100%;
+    height: 50%;
+  }
+  
+  @media (min-width: 768px) {
+    .hero img {
+      width: 80%;
+      height: 60%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hero img {
+      width: 76%;
+      height: 70%;
+    }
+  }
+
+  /* Mobile (portrait) */
+  @media (max-width: 320px) {
+    .hero img {
+      width: 90%;
+      height: 30vh;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+  }
+
+
+  /* Mobile (landscape) */
+  @media (min-width: 321px) and (max-width: 479px) {
+    .hero img {
+      width: 90%;
+      height: 40vh;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+  }
+
+
+
+
+
+
+  .text {
+    color: white;
+  
+    background-image: linear-gradient(
+      to left,
+  
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    );
+  }
+  
+  :root {
+    --font-size-sm: clamp(18px, 3vw, 24px);
+    --font-size-md: clamp(24px, 4vw, 34px);
+    --font-size-lg: clamp(34px, 5vw, 44px);
+  }
+  
+  .heading {
+    font-family: "Abel", sans-serif;
+    color: rgb(181, 177, 177);
+    font-size: var(--font-size-md);
+    letter-spacing: 0.1em;
+    
+    /* Optional width adjustment */
+    width: clamp(15rem, 20vw, 25rem);
+  }
+  
+  .subHeading {
+    /* border: 1px solid red; */
+    width: 25rem;
+  
+    font-family: "Rubik", sans-serif;
+  
+    text-align: left;
+    font-size: 2rem;
+  }
+  
+  .exp {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    /* padding: 20px; */
+  
+    /* border: 1px solid red; */
+  }
+  
